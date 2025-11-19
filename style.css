@@ -1,0 +1,23 @@
+:root{
+  --accent:#06b6d4;
+  --bg:#f8fafc;
+  --text:#0f172a;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(90deg,var(--accent),#7dd3fc);color:white;padding:3.5rem 1.25rem;text-align:center}
+header h1{margin:0;font-size:clamp(1.25rem,3vw,2rem);letter-spacing:0.02em}
+header p{margin-top:.5rem;font-size:.95rem;opacity:.95}
+
+main{max-width:960px;margin:2rem auto;padding:0 1rem}
+section{background:white;border-radius:10px;padding:1.25rem;margin-bottom:1rem;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+section h2{margin:0 0 .5rem 0;font-size:1.05rem}
+footer{text-align:center;padding:1rem;color:var(--muted);font-size:.9rem}
+
+a{color:var(--accent);text-decoration:none}
+@media (min-width:768px){
+  header{padding:4.5rem 1.25rem}
+  main{margin-top:2.5rem}
+}
